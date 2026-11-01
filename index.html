@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="newtest.css">
+    <script src="javascript.js" defer></script>
     <title>Document</title>
 </head>
-<body class="bd">
+<body>
     <section class="clr1">
         <header class="hdr">
         <div class="first-block">
-            <button class="btn1">Меню</button>
+            <button class="btn1" id="btnn1">Тема</button>
         </div>
         <div class="second-block">
             <div class="baba">
@@ -193,9 +194,9 @@
     <section class="darksection1">
             <div class="bigblockeightcont">
                 <label class="labelname" for="uesername">Заказать персональную консультацию</label>
-                    <input type="text" class="custom-input" name="username" placeholder="Имя" required>
-                    <input type="text" class="custom-input2" placeholder="Телефон" pattern="^(\+7|8)?\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$" maxlength="12" required>
-                <button class="custom-button">Заказать звонок</button>
+                    <input type="text" class="custom-input" name="username" placeholder="Имя" required id="name-input" minlength="2">
+                    <input type="text" class="custom-input2" placeholder="Телефон" pattern="^(\+7|8)?\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$" maxlength="12" required id="phone-input">
+                <button class="custom-button" id="submit-button" disabled>Заказать звонок</button>
                 <label class="checkbox-label1" for="agree">
                 <input type="checkbox" id="agree" name="agree" class="custom-checkbox1">
                 Принимаю политику конфиденциальности и даю согласие на обработку персональных данных
@@ -270,5 +271,12 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="my-modal">
+        <div class="modal-box">
+            <button class="modal-x" id="modal-x">x</button>
+            <p class="modal-text">Презентация в разработке</p>
+        </div>
+    </div>
+    
 </body>
 </html>
