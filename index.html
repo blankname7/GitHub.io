@@ -17,19 +17,19 @@
             <div class="baba">
                 <div class="blk1">
                     <div>
-                        <a class="btn2">Выбрать квартиру</a>
+                        <a class="btn2" href="#home-section">Выбрать квартиру</a>
                     </div>
                     <div>
-                        <a class="btn3">Застройщики</a>
+                        <a class="btn3" href="#developers">Застройщики</a>
                     </div>
                     <div>
-                        <a class="btn4">Для брокеров</a>
+                        <a class="btn4" href="#brokers">Для брокеров</a>
                     </div>
                 </div>
             
                 <div class="blk2">
                     <div class="sixth-block">
-                        <button class="call">Заказать звонок</button>
+                        <button class="call" id="callButton">Заказать звонок</button>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
     </section>
-    <section class="section2">
+    <section class="section2" id="home-section">
         <div class="second-main-container">
             <div class="roundblock1">
                 <p class="txt4">Отделки</p>
@@ -127,7 +127,7 @@
             </div>
         </div>
     </section>
-    <section class="tttt">
+    <section class="tttt" id="developers">
         <div class="fifth-main-container">
             <div class="twotextleftblocks">
                 <div>
@@ -191,7 +191,7 @@
             </div>
         </div>
     </section>
-    <section class="darksection1">
+    <section class="darksection1" id="brokers">
             <div class="bigblockeightcont">
                 <label class="labelname" for="uesername">Заказать персональную консультацию</label>
                     <input type="text" class="custom-input" name="username" placeholder="Имя" required id="name-input" minlength="2">
@@ -214,6 +214,7 @@
                     <p class="txt19">Варианты отделки</p>
                 </div>
             </div>
+
             <div class="ninthinfoblocks">
                 <div class="ninthinfoblock1">
                     <img src="pic24.png" alt="#" class="img24">
@@ -239,6 +240,25 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="ninthinfoblock1">
+                    <img src="pic22.png" alt="#" class="img24">
+                    <div class="iinsidepic">
+                        <div class="iinsidepicdesigne">
+                            <p class="royal">Exclusive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ninthinfoblock2">
+                    <img src="pic11.png" alt="#" class="img24">
+                    <div class="iinsidepic">
+                        <div class="iinsidepicdesigne">
+                            <p class="royal">View</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -265,7 +285,7 @@
                 <p class="number">
                     +78329823932
                 </p>
-                <span>
+                <span class="footer-button">
                     <button class="buttonn">Оставить заявку</button>
                 </span>
             </div>
@@ -277,6 +297,11 @@
             <p class="modal-text">Презентация в разработке</p>
         </div>
     </div>
-    
+    <div class="modal-number" id="call-number-modal">
+        <div class="number-modal-box">
+            <button class="close-modal" id="close-modal">x</button>
+            <p class="number-text-modal">+7 (999) 999-99-99</p>
+        </div>
+    </div>
 </body>
 </html>

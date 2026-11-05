@@ -45,3 +45,37 @@ submitButton.addEventListener("click", () => {
     phoneInput.value = "";
     updateButtonState();
 });
+
+const numberModal = document.getElementById("call-number-modal");
+const calButton = document.querySelector(".call");
+const closeCalButton = document.getElementById("close-modal");
+
+calButton.addEventListener("click", () => {
+    numberModal.classList.add("show");
+});
+
+closeCalButton.addEventListener("click", () => {
+    numberModal.classList.remove("show");
+});
+
+numberModal.addEventListener("click", (event) => {
+    if (event.target === numberModal) {
+        numberModal.classList.remove("show");
+    }
+});
+
+const requestButton = document.querySelector(".buttonn");
+
+requestButton.addEventListener("click", () => {
+    numberModal.classList.add("show");
+});
+
+closeCalButton.addEventListener("click", () => {
+    numberModal.classList.remove("show");
+});
+
+numberModal.addEventListener("click", (event) => {
+    if (event.target === numberModal) {
+        numberModal.classList.remove("show");
+    }
+});
